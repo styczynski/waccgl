@@ -21,15 +21,17 @@ Unfortunately this project isn't well documented yet (try to read the examples).
 
 ## Compiling
 The library contains examples files.
-To compile examples use the following command: `make all`
-To get list of all available examples type: `make run-example`
-To run an example type: `make run-example-NAME` (e.g. `make run-example-demo`)
-To clean project directory use `make clean`
+Makefile commands:
+
+ * To compile examples use the following command: `make all`
+ * To get list of all available examples type: `make run-example`
+ * To run an example type: `make run-example-NAME` (e.g. `make run-example-demo`)
+ * To clean project directory use `make clean`
 
 ## Examples
 The library contains few examples.
 You can see them to figure out how to use WACCGL.
 
 ## Support for other OSes
-All the library depends on `./include/console.h`.
+All the library depends on `./include/console.h`. 
 If you want to port this library to linux just rewrite the `console.h` code.
