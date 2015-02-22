@@ -1,18 +1,20 @@
-ECHO = @
+ECHO := @
 
-CC = $(ECHO)g++
-CFLINKS = -lgdi32 -luser32
-CEFLAGS_DEBUG = -mwindows -lm -std=c++11 -O2 -Wall -W -Wextra -Wdouble-promotion -pedantic -Wmissing-include-dirs -Wunused -Wuninitialized -Wextra -Wstrict-overflow=3 -Wtrampolines -Wfloat-equal -Wconversion -Wmissing-field-initializers -Wno-multichar -Wpacked -Winline -Wshadow
-CEFLAGS_RELEASE = -mwindows -lm -std=c++11 -O3 -w
-CEFLAGS = $(CEFLAGS_RELEASE)
+CC := $(ECHO)g++
+CFLINKS := -pthread -lgdi32 -luser32 -lpthread
+CEFLAGS_DEBUG := -pthread -mwindows -lm -std=c++11 -O2 -Wall -W -Wextra -Wdouble-promotion -pedantic -Wmissing-include-dirs -Wunused -Wuninitialized -Wextra -Wstrict-overflow=3 -Wtrampolines -Wfloat-equal -Wconversion -Wmissing-field-initializers -Wno-multichar -Wpacked -Winline -Wshadow
+CEFLAGS_RELEASE := -pthread -mwindows -lm -std=c++11 -O3 -w
+CEFLAGS := $(CEFLAGS_RELEASE)
 EXAMPLES_FILES := $(wildcard ./examples/src/*.cpp)
 EXAMPLES_FILES_LIST := $(addprefix ,$(notdir $(EXAMPLES_FILES:.cpp=)))
 EXAMPLES_OBJ_FILES := $(addprefix ./examples/bin/,$(notdir $(EXAMPLES_FILES:.cpp=.o)))
 EXAMPLES_EXE_FILES := $(addprefix ./examples/bin/,$(notdir $(EXAMPLES_FILES:.cpp=.exe)))
 EXAMPLES_BUILT_FILES := $(addprefix ./examples/bin/,$(notdir $(wildcard ./examples/bin/*)))
+EXAMPLES_NUMBER := $(words $(EXAMPLES_FILES))
+EXAMPLES_MADE_NUMBER := %
 
 CC_FLAGS=-I./include $(CEFLAGS)
-LD_FLAGS=$(CFLINKS)
+LF_FLAGS=$(CFLINKS)
 
 ifneq (,$(findstring run-example-,$(MAKECMDGOALS)))
 RUN_EXAMPLE_NAME=$(subst run-example-,,$(MAKECMDGOALS))
@@ -29,6 +31,7 @@ $(error Directory is clean)
 endif
 endif
 
+
 help:
 	$(info WACCGL - Windows Advanced Console Componental Graphics Library)
 	$(info Makefile)
@@ -44,8 +47,11 @@ clean-all: clean-examples
 
 all: examples
 
-examples: $(EXAMPLES_OBJ_FILES) $(EXAMPLES_EXE_FILES) clean-examples-build
+examples: examples_ $(EXAMPLES_OBJ_FILES) $(EXAMPLES_EXE_FILES) clean-examples-build
 	$(info Examples compiled. Done)
+
+examples_:
+	$(info $(EXAMPLES_NUMBER) examples are available)
 
 run-example:
 	$(info All available examples: $(EXAMPLES_FILES_LIST))

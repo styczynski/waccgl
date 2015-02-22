@@ -23,6 +23,7 @@ Unfortunately this project isn't well documented yet (try to read the examples).
 The library contains examples files.
 Makefile commands:
 
+ * To get some help type `make` or `make help`
  * To compile examples use the following command: `make all`
  * To get list of all available examples type: `make run-example`
  * To run an example type: `make run-example-NAME` (e.g. `make run-example-demo`)
@@ -32,6 +33,14 @@ Makefile commands:
 The library contains few examples.
 You can see them to figure out how to use WACCGL.
 
+ * basic.cpp - basic usage
+ * demo.cpp - demo of some components
+ * manual-drawing.cpp - some manual buffer manipulation code
+ * mouse.cpp - simple mouse support
+ * no-buffer-cleaning.cpp - you don't have to clean up this mess
+ * scene-animations.cpp - some simple transitions
+ * windows.cpp - how about an iternal window?
+
 ## Support for other OSes
-All the library depends on `./include/console.h`. 
+All the library depends on `./include/console.h`.
 If you want to port this library to linux just rewrite the `console.h` code.
