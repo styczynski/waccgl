@@ -3,6 +3,10 @@ Windows Advanced Console Componental Graphics Library
 
 Some examples involving WACCGL usage:
 
+![WACCGL Screenshot No. 1](https://raw.githubusercontent.com/isis97/waccgl/master/static/screenshot0.png "Example no. 1")
+![WACCGL Screenshot No. 2](https://raw.githubusercontent.com/isis97/waccgl/master/static/screenshot1.png "Example no. 2")
+![WACCGL Screenshot No. 3](https://raw.githubusercontent.com/isis97/waccgl/master/static/screenshot2.png "Example no. 3")
+
 
 ## About
 This is just another crazy library, which allows you to create ascii-text graphical user interface inside Windows Command Prompt!
