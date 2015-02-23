@@ -40,6 +40,8 @@ help:
 	$(info To run the specified example use 'make run-example-NAME' e.g. 'make run-example-demo')
 	$(info To clean project use 'make clean' command)
 
+rebuild: clean-all examples
+
 clean: clean-all
 	$(info Project cleaned. Done)
 
