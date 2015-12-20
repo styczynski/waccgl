@@ -1,9 +1,23 @@
+
+#ifdef WACCGL_VERSION
+#warning "Macro WACCGL_VERSION was already defined! This may be WACCGL versioning problem!"
+#error "Cannot use two versions of WACCGL - check out your dependencies."
+#endif
+
 /**
 	WACCGL
 		Windows Advanced Console Componental Graphics Library
-		Version 1.0 Alpha
+		Version 2.0 Alpha
 **/
+#define WACCGL_VERSION 2.0
+using namespace std;
 
+
+
+
+#ifndef WACCGL_DISABLE_COMPATIBILITY_MODULE
+#undef WACCGL_DISABLE_COMPATIBILITY_MODULE
+#endif
 
 #define _WIN32_WINNT 0x500
 #include <windows.h>
@@ -18,6 +32,7 @@
 #include <functional>
 #include <tchar.h>
 #include <algorithm>
+#include "compatibility.h"
 
 namespace waccgl {
 
