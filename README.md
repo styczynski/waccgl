@@ -1,17 +1,17 @@
-[![Made by Styczynsky Digital Systems][badge sts]][link isis97]
+[![Made by Styczynsky Digital Systems][badge sts]][link styczynski]
 
-[![Platform - Windows][badge support windows]][link isis97]
+[![Platform - Windows][badge support windows]][link styczynski]
 
 # WACCGL (C/C++ library, Windows)
 Windows Advanced Console Componental Graphics Library
 
 Some examples involving WACCGL usage:
 
-TicTacConsole game involves usage of old integrated WACCGL code [see...](https://github.com/isis97/TicTacConsole)
+TicTacConsole game involves usage of old integrated WACCGL code [see...](https://github.com/styczynski/TicTacConsole)
 
-![WACCGL Screenshot No. 1](https://raw.githubusercontent.com/isis97/waccgl/master/static/screenshot0.png "Example no. 1")
-![WACCGL Screenshot No. 2](https://raw.githubusercontent.com/isis97/waccgl/master/static/screenshot1.png "Example no. 2")
-![WACCGL Screenshot No. 3](https://raw.githubusercontent.com/isis97/waccgl/master/static/screenshot2.png "Example no. 3")
+![WACCGL Screenshot No. 1](https://raw.githubusercontent.com/styczynski/waccgl/master/static/screenshot0.png "Example no. 1")
+![WACCGL Screenshot No. 2](https://raw.githubusercontent.com/styczynski/waccgl/master/static/screenshot1.png "Example no. 2")
+![WACCGL Screenshot No. 3](https://raw.githubusercontent.com/styczynski/waccgl/master/static/screenshot2.png "Example no. 3")
 
 
 ## About
@@ -76,4 +76,4 @@ Of course you can implement any GUI component by extending `scene_object` class.
 
 [badge sts]: https://img.shields.io/badge/-styczynsky_digital_systems-blue.svg?style=flat-square&logoWidth=20&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABYAAAAXCAYAAAAP6L%2BeAAAABmJLR0QA%2FwD%2FAP%2BgvaeTAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAB3RJTUUH4AgSEh0nVTTLngAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAm0lEQVQ4y2Pc%2Bkz2PwMNAAs2wVMzk4jSbJY%2BD6ccEwONACMsKIh1JSEgbXKeQdr4PO1cPPQMZiGkoC7bkCQD7%2Fx7znDn35AOClK9PEJSBbNYAJz999UGrOLocsM0KHB5EZ%2FXPxiVMDAwMDD8SP3DwJA6kFka5hJCQOBcDwMDAwPDm3%2FbGBj%2BbR8tNrFUTbiAB8tknHI7%2FuTilAMA9aAwA8miDpgAAAAASUVORK5CYII%3D
 
-[link isis97]: http://styczynski.ml
+[link styczynski]: http://styczynski.in
